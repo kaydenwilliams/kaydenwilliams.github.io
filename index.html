@@ -4,155 +4,337 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kayden Williams" />
-    <meta name="description" content="Web Portfolio for Kayden Williams." />
+    <meta name="description" content="Kayden Williams - Data Analyst & Software Developer specializing in data visualization, full-stack development, and business intelligence. View my portfolio, projects, and get in touch." />
+    <meta name="keywords" content="Data Analyst, Software Developer, Data Visualization, Full Stack Developer, Business Intelligence, Kayden Williams" />
     <link id="themeStylesheet" rel="stylesheet" href="light.css">
-    <title>KAYDE.V</title>
+    <title>Kayden Williams | Data Analyst & Developer</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
   </head>
-  <script src="script.js"></script>
   <body>
     <header>
       <h1 class="logo">KAYDE.V</h1>
-      <div class="hamburger">
+      <div class="hamburger" aria-label="Toggle navigation menu">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
       </div>
       <nav>
           <a class="nav-links" href="#home">Home</a>
-          <a class="nav-links" href="#about">About Me</a>
+          <a class="nav-links" href="#about">About</a>
           <a class="nav-links" href="#projects">Projects</a>
           <a class="nav-links" href="#contact">Contact</a>
-          <input type="checkbox" id="darkmode-toggle"/>
-          <label for="darkmode-toggle"></label>
+          <div class="theme-toggle-wrapper">
+            <input type="checkbox" id="darkmode-toggle" aria-label="Toggle dark mode"/>
+            <label for="darkmode-toggle">
+              <i class="fas fa-sun sun-icon"></i>
+              <i class="fas fa-moon moon-icon"></i>
+            </label>
+          </div>
       </nav>
-  </header>
+    </header>
     
-
     <section id="home">
       <div class="home-container">
-        <h>Hi there,</h>
-        <h1>I'm Kayden Williams</h1>
-        <h6>
-          Software Engineer, building the future one line of code at
-          a time.
-        </h6>
-        <a href="#projects">
-          <button class="home-button">View My Work</button>
-        </a>
+        <p class="greeting">Hi there, I'm</p>
+        <h1 class="main-title">Kayden Williams</h1>
+        <h2 class="subtitle">Data Analyst & Software Developer</h2>
+        <p class="description">
+          Transforming data into actionable insights and building robust applications that drive business decisions.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects">
+            <button class="home-button primary">View My Work</button>
+          </a>
+          <a href="#contact">
+            <button class="home-button secondary">Get In Touch</button>
+          </a>
+        </div>
       </div>
     </section>
 
     <section id="about">
-      <h1 class="about-title">A Bit About Me</h1>
-      <div class="experience">
-        <div class="experience-list">
-            <p>🚀 Software Engineering Intern - Gaining hands-on experience in full-stack development.</p>
-            <p>💻 Project Lead - Leading and managing development projects from concept to deployment.</p>
-            <p>📚 Computer Science Student - Pursuing a degree with a focus on software engineering and problem-solving.</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-intro">
+          <p>I'm a passionate data analyst and developer with expertise in transforming complex datasets into meaningful insights and building full-stack applications. Currently pursuing Data Analytics while gaining hands-on experience in business intelligence, data visualization, and software development.</p>
+        </div>
+
+        <div class="experience-section">
+          <h3 class="subsection-title">Experience & Education</h3>
+          <div class="experience-grid">
+            <div class="experience-card">
+              <div class="experience-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h4>Data Analytics Intern</h4>
+              <p>Analyzing datasets, creating dashboards, and delivering insights through data visualization tools like Tableau and Power BI.</p>
+            </div>
+            
+            <div class="experience-card">
+              <div class="experience-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Project Lead</h4>
+              <p>Leading development teams in building data-driven applications, from requirements gathering to deployment and maintenance.</p>
+            </div>
+            
+            <div class="experience-card">
+              <div class="experience-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h4>Data Analytics Student</h4>
+              <p>Pursuing degree with focus on statistical analysis, data mining, business intelligence, and predictive modeling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="toolbox-section">
+          <h3 class="subsection-title">Technical Skills</h3>
+          <div class="toolbox-grid">
+            <div class="toolbox-category">
+              <h4 class="category-title">Programming Languages & Frameworks</h4>
+              <div class="toolbox-items">
+                <div class="toolbox-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript/Node.js</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-react"></i>
+                  <span>Next.js</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-python"></i>
+                  <span>Python/Django</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-java"></i>
+                  <span>Java/Spring Boot</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-code"></i>
+                  <span>C#/.NET</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolbox-category">
+              <h4 class="category-title">Databases & Data Visualization</h4>
+              <div class="toolbox-items">
+                <div class="toolbox-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQL/MySQL</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-leaf"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-chart-bar"></i>
+                  <span>Tableau</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-chart-pie"></i>
+                  <span>Power BI</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolbox-category">
+              <h4 class="category-title">Web Development & Cloud</h4>
+              <div class="toolbox-items">
+                <div class="toolbox-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML/CSS</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-bootstrap"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-wind"></i>
+                  <span>Tailwind</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-google"></i>
+                  <span>Google Cloud</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-microsoft"></i>
+                  <span>Azure</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="toolbox-category">
+              <h4 class="category-title">Development Tools & Practices</h4>
+              <div class="toolbox-items">
+                <div class="toolbox-item">
+                  <i class="fas fa-code"></i>
+                  <span>VS Code</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-java"></i>
+                  <span>IntelliJ IDEA</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-file-excel"></i>
+                  <span>Excel</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fab fa-git-alt"></i>
+                  <span>Git/GitHub</span>
+                </div>
+                <div class="toolbox-item">
+                  <i class="fas fa-vial"></i>
+                  <span>Unit Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  
-      <div class="toolbox-container">
-          <h2 class="toolbox-title">My Toolbox</h2>
-          <div class="toolbox-items">
-              <div class="toolbox-item">
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                      <i class="fab fa-html5 toolbox-icon"></i> HTML
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                      <i class="fab fa-css3-alt toolbox-icon"></i> CSS
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                      <i class="fab fa-js-square toolbox-icon"></i> JavaScript
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://git-scm.com/" target="_blank">
-                      <i class="fab fa-git toolbox-icon"></i> Git/GitHub
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://www.java.com/en/" target="_blank">
-                      <i class="fab fa-java toolbox-icon"></i> Java
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://reactjs.org/" target="_blank">
-                      <i class="fab fa-react toolbox-icon"></i> React
-                  </a>
-              </div>
-              <div class="toolbox-item">
-                  <a href="https://nodejs.org/" target="_blank">
-                      <i class="fab fa-node toolbox-icon"></i> Node.js
-                  </a>
-              </div>
-          </div>
-      </div>
-  </section>
+    </section>
   
     <section id="projects">
-      <h2 class="projects-title">Projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">A showcase of my data analysis and development work</p>
+      
       <div class="project-container">
         <div class="project-card">
-          <div class="project-name">Project 1</div>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
+          <div class="project-header">
+            <i class="fas fa-database project-icon"></i>
+          </div>
+          <h3 class="project-name">MS Progression Intelligence Engine (MS-PIE)</h3>
+          <p class="project-description">
+            Processes MS clinical data to track EDSS, relapses, MRI lesions, and symptoms; provides cleaned SQL datasets, Python analysis, forecasting, and interactive Tableau dashboards.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Excel</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">pandas</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">Tableau</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kaydenwilliams/ms_pie" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="https://public.tableau.com/app/profile/kayden.williams2622/viz/MS_PIE/MS_PIE" target="_blank" class="demo-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>        
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-question-circle project-icon"></i>
+          </div>
+          <h3 class="project-name">QuizQuest</h3>
+          <p class="project-description">
+            Collaborative school project: web-based interactive quiz and learning platform with role-based access, secure authentication, real-time scoring, and admin dashboards.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kaydenwilliams/QuizQuest" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="https://quizquest-interactive-quiz-learning.onrender.com/" class="demo-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
           </div>
         </div>
+        
+
         <div class="project-card">
-          <div class="project-name">Project 2</div>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
+          <div class="project-header">
+            <i class="fas fa-code project-icon"></i>
           </div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Project 3</div>
-          <div class="links">
-            <a href="#">GitHub</a>
-            <a href="#">Live Demo</a>
+          <h3 class="project-name">Project 3</h3>
+          <p class="project-description">
+            Project 3 Description</p>
+          <div class="project-tech">
+            <span class="tech-tag">Skill 1</span>
+            <span class="tech-tag">Skill 2</span>
+            <span class="tech-tag">Skill 3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kaydenwilliams" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> View Code
+            </a>
+            <a href="#" class="demo-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
           </div>
         </div>
       </div>
     </section>
-  </body>
 
     <section id="contact">
-      <h1 class="contact-title">Let's Connect</h1>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">I'm always open to discussing new opportunities, data projects, and collaborations</p>
 
-      <div class="contact-card">
-        <div class="contact-info">
-          <i class="fas fa-phone-alt"></i> (224) 944-1981
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:kaydenrwilliams@gmail.com">kaydenrwilliams@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Los Angeles, Chicago, Milwaukee</p>
+            </div>
+          </div>
         </div>
-        <div class="contact-info">
-          <i class="fas fa-envelope"></i> kaydenrwilliams@gmail.com
-        </div>
-        <div class="contact-info">
-          <i class="fas fa-map-marker-alt"></i> Los Angeles, Chicago, Milwaukee
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/kaydenwilliams" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/kayden-williams-k10/" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <div class="social-section">
+          <h3>Find Me Online</h3>
+          <div class="social-links">
+            <a href="https://github.com/kaydenwilliams" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/kayden-williams-k10/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <p>&copy; 2024 Kayden Williams. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
